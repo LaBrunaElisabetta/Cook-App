@@ -126,9 +126,9 @@
 }
 
 .nav-button.left {
-  left: 0;
+  left: -10;
 }
 
 .nav-button.right {
-  right: 0;
+  right: 0px;
 }

@@ -1,11 +1,15 @@
+<!-- ===== Navbar principale ===== -->
 <div class="navbar-container">
   <mat-toolbar color="primary">
     <div class="navbar-content">
+      <!-- Logo -->
       <div class="logo">🍳 Cook App</div>
+
+      <!-- Link di navigazione -->
       <div class="nav-links">
-        <a mat-button routerLink="/">Home</a>
-        <a mat-button routerLink="/chi-siamo">Chi siamo</a>
-        <a mat-button routerLink="/ricette">Ricette</a>
+        <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a mat-button routerLink="/chi-siamo" routerLinkActive="active-link">Chi siamo</a>
+        <a mat-button routerLink="/ricette" routerLinkActive="active-link">Ricette</a>
       </div>
     </div>
   </mat-toolbar>
