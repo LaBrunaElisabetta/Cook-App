@@ -1,6 +1,10 @@
 .navbar-container {
   width: 100%;
   background-color: antiquewhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar-content {

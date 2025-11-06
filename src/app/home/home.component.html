@@ -1,1 +1,82 @@
-<p>home works!</p>
+<!-- Intestazione principale -->
+<header class="header" role="banner">
+  <img
+    src="assets/header-cucina.jpg"
+    alt="Tavola imbandita con piatti italiani"
+    class="header-image"
+  />
+  <div class="header-text">
+    <h1>Benvenuti su <span lang="en">Cook App</span> 🍽️</h1>
+    <p>Scopri le nostre ricette preferite e lasciati ispirare!</p>
+  </div>
+</header>
+
+<!-- Sezione ricette autunnali -->
+<section class="carousel" aria-label="Ricette autunnali">
+  <div class="card-container">
+
+    <article class="recipe-card" role="group" aria-labelledby="risotto-title">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title id="risotto-title">Risotto ai Funghi Porcini</mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="assets/risotto-funghi.jpg"
+          alt="Risotto ai funghi porcini servito caldo"
+        />
+        <mat-card-content>
+          <p>Un classico autunnale, cremoso e profumato, ideale per valorizzare i funghi di stagione.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="primary" aria-label="Scopri la ricetta del Risotto ai Funghi Porcini">
+            Scopri la ricetta
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </article>
+
+    <article class="recipe-card" role="group" aria-labelledby="torta-title">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title id="torta-title">Torta salata zucca e gorgonzola</mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="assets/torta-salata.jpg"
+          alt="Torta salata con zucca e gorgonzola su sfoglia dorata"
+        />
+        <mat-card-content>
+          <p>Un antipasto dal gusto deciso, che unisce la dolcezza della zucca al sapore intenso del gorgonzola.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="primary" aria-label="Scopri la ricetta della torta salata zucca e gorgonzola">
+            Scopri la ricetta
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </article>
+
+    <article class="recipe-card" role="group" aria-labelledby="omelette-title">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title id="omelette-title">Omelette con zucca e funghi</mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="assets/omelette-zucca.jpg"
+          alt="Omelette con zucca e funghi servita calda"
+        />
+        <mat-card-content>
+          <p>Una ricetta veloce e nutriente, perfetta per una cena leggera ma saporita nelle sere d'autunno.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="primary" aria-label="Scopri la ricetta dell'Omelette autunnale">
+            Scopri la ricetta
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </article>
+
+  </div>
+</section>
