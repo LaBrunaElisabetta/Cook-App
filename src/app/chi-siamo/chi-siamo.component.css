@@ -1,8 +1,9 @@
-.chi-siamo {                   
+/* --- Sezione 1 --- */
+.chi-siamo {
   display: flex;
   align-items: center;
   overflow: hidden;
-  gap: 2rem;       
+  gap: 2rem; 
 }
 
 .foto, .testo {
@@ -11,24 +12,48 @@
 }
 
 .foto {
-  transform: translateX(-100%); 
+  transform: translateX(-100%);
 }
 
 .testo {
-  transform: translateX(100%);  
+  transform: translateX(100%);
 }
 
 .foto.attivo {
   opacity: 1;
-  transform: translateX(0);     
+  transform: translateX(0);
 }
 
 .testo.attivo {
   opacity: 1;
-  transform: translateX(0);    
+  transform: translateX(0);
 }
 
 img {
   max-width: 250px;
   border-radius: 8px;
+}
+
+/* --- Sezione 2 --- */
+.seconda-sezione {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contenuto {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease;
+  margin-top: 1.5rem;
+}
+
+.contenuto.visibile {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contenuto img {
+  max-width: 500px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }

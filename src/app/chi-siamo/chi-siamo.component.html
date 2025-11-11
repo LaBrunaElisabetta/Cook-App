@@ -1,3 +1,4 @@
+<!-- Sezione 1: immagine a sinistra e testo a destra -->
 <section class="chi-siamo" aria-labelledby="chi-siamo-title">
   <div class="foto" [class.attivo]="attivo">
     <img 
@@ -8,10 +9,30 @@
   </div>
 
   <div class="testo" [class.attivo]="attivo" role="region" aria-describedby="chi-siamo-desc">
-    <h2 id="chi-siamo-title">Chi sono, più che "Chi siamo"</h2>
+    <h2 id="chi-siamo-title">Chi sono</h2>
     <p id="chi-siamo-desc">
-      Sono Elisabetta La Bruna, la programmatrice dietro questa piccola presentazione del sito "Cook-app".
-      L'ho creato per esercitarmi con la programmazione in Angular utilizzando Angular Material e Typescript. 
+      Sono Ely, mi occupo di [ruolo]. Credo in [valori/missione] e aiuto
+      [target] a ottenere [beneficio].
+    </p>
+  </div>
+</section>
+
+<!-- Sezione 2: bottone + contenuto che appare da sotto -->
+<section class="seconda-sezione" aria-labelledby="seconda-title">
+<button mat-raised-button color="primary"
+        (click)="toggleSeconda()"
+        attr.aria-controls="seconda-contenuto"
+        [attr.aria-expanded]="mostraSeconda">
+  Mostra dettagli
+</button>
+
+
+
+  <div id="seconda-contenuto" class="contenuto" [class.visibile]="mostraSeconda" role="region" aria-describedby="seconda-desc">
+    <img src="assets/canvaHome.png" alt="Immagine aggiuntiva" role="img" aria-hidden="false" />
+    <h2 id="seconda-title">Progetto Canva</h2>
+    <p id="seconda-desc">
+      Questo è la base del progetto che ho costruito io stessa per creare in seguito questo sito Web.
     </p>
   </div>
 </section>
