@@ -1,1 +1,17 @@
-<p>chi-siamo works!</p>
+<section class="chi-siamo" aria-labelledby="chi-siamo-title">
+  <div class="foto" [class.attivo]="attivo">
+    <img 
+      src="assets/mia-foto.jpg" 
+      alt="Foto di Ely" 
+      role="img" 
+      aria-hidden="false" />
+  </div>
+
+  <div class="testo" [class.attivo]="attivo" role="region" aria-describedby="chi-siamo-desc">
+    <h2 id="chi-siamo-title">Chi sono, più che "Chi siamo"</h2>
+    <p id="chi-siamo-desc">
+      Sono Elisabetta La Bruna, la programmatrice dietro questa piccola presentazione del sito "Cook-app".
+      L'ho creato per esercitarmi con la programmazione in Angular utilizzando Angular Material e Typescript. 
+    </p>
+  </div>
+</section>

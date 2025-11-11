@@ -1,13 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-chi-siamo',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './chi-siamo.component.html',
-  styleUrl: './chi-siamo.component.css'
+  styleUrls: ['./chi-siamo.component.css']
 })
-export class ChiSiamoComponent {
+export class ChiSiamoComponent implements OnInit {
+  attivo = false;
 
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.attivo = true;
+    }, 300);
+  }
 }

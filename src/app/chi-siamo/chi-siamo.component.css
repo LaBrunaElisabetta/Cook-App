@@ -1,0 +1,34 @@
+.chi-siamo {                   
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 2rem;       
+}
+
+.foto, .testo {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.foto {
+  transform: translateX(-100%); 
+}
+
+.testo {
+  transform: translateX(100%);  
+}
+
+.foto.attivo {
+  opacity: 1;
+  transform: translateX(0);     
+}
+
+.testo.attivo {
+  opacity: 1;
+  transform: translateX(0);    
+}
+
+img {
+  max-width: 250px;
+  border-radius: 8px;
+}
